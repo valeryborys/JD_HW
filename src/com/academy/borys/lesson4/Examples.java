@@ -13,8 +13,6 @@ public class Examples {
         }
 
         long start = System.currentTimeMillis();
-        //bubbleSort(array);
-      // mergeSort(array);
         Arrays.sort(array);
         long end = System.currentTimeMillis();
 
@@ -39,7 +37,7 @@ public class Examples {
     }
 
     public static void mergeSort(int[] array) {
-        if (array.length < 2) {
+        if (array.length < 10) {
             return;
         }
         int midIndex = array.length / 2;
@@ -70,13 +68,13 @@ public class Examples {
             k++;
         }
 
-        for (; i < left.length; i++, k++){
+        for (; i < left.length; i++, k++) {
             array[k] = left[i];
 
         }
-        for (; j < right.length; j++, k++){
+        for (; j < right.length; j++, k++) {
             array[k] = right[j];
-
+//comment
         }
     }
 
